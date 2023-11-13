@@ -40,6 +40,6 @@ resource "google_cloud_run_service_iam_binding" "dashboard_noauth" {
   service  = "fourkeys-grafana-dashboard"
 
   role       = "roles/run.invoker"
-  members    = ["allUsers"]
+  members    = []
   depends_on = [google_cloud_run_service.dashboard]
 }

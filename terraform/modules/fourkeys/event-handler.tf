@@ -32,7 +32,7 @@ resource "google_cloud_run_service_iam_binding" "event_handler_noauth" {
   project    = var.project_id
   service    = google_cloud_run_service.event_handler.name
   role       = "roles/run.invoker"
-  members    = ["allUsers"]
+  members    = []
   depends_on = [google_cloud_run_service.event_handler]
 }
 
