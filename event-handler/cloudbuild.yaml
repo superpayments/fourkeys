@@ -28,4 +28,4 @@ images: [
   'gcr.io/$PROJECT_ID/event-handler:${_TAG}'
 ]
 substitutions:
-  _TAG: latest
+  _TAG: b94cb9da5b305e2268b46c3a013da4cd8886c932
